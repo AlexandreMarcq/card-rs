@@ -2,7 +2,7 @@ use super::card::UnoCard;
 
 #[derive(Debug)]
 pub struct UnoPlayer {
-    hand: Vec<UnoCard>,
+    pub hand: Vec<UnoCard>,
 }
 
 impl UnoPlayer {

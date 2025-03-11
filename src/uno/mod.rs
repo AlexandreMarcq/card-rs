@@ -5,5 +5,8 @@ pub mod state;
 
 #[derive(Debug)]
 pub enum UnoError {
+    InvalidCard,
+    InvalidEvent,
+    InvalidPlayer,
     TooManyPlayers,
 }

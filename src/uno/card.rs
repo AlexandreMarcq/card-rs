@@ -1,4 +1,4 @@
-#[derive(Clone, Debug)]
+#[derive(Clone, Debug, PartialEq)]
 pub enum UnoColor {
     Blue,
     Green,
@@ -6,9 +6,10 @@ pub enum UnoColor {
     Yellow,
 }
 
+#[derive(Clone, PartialEq)]
 pub struct UnoCard {
-    color: UnoColor,
-    value: u8,
+    pub color: UnoColor,
+    pub value: u8,
 }
 
 impl std::fmt::Debug for UnoCard {
